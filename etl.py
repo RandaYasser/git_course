@@ -20,3 +20,8 @@ df.fillna({"name": "Unknown", "age": df["age"].median(), "purchase_amount": 0}, 
 df["purchasedate"] = pd.to_datetime(df["purchasedate"], errors="coerce")
 
 #################################################################################
+
+# Commit 3: Load
+
+# Save the final processed data into a local file
+df.to_csv("final_data.csv", index=False)
